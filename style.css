@@ -1,5 +1,53 @@
+:root {
+    --background-color: #EAEAEA;
+}
+
 @font-face {
     font-family: Montserrat;
     src: url("Montserrat-Regular.woff2") format("woff2"),
     url("Montserrat-Regular.woff") format("woff");
 }
+
+* {
+    box-sizing: border-box;
+}
+  
+.html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Montserrat;
+    line-height: 175%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__item {
+    padding: 0px 20px;
+    margin: 0px 30px;
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    transition: font-size 0.5s;
+}
+
+.menu__item:hover {
+    font-size: 103%;
+}
+
