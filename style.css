@@ -1,11 +1,24 @@
 :root {
     --background-color: #EAEAEA;
+    --max-weight: 1080px;
 }
 
 @font-face {
     font-family: Montserrat;
     src: url("Montserrat-Regular.woff2") format("woff2"),
     url("Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url("Montserrat-Bold.woff2") format("woff2"),
+    url("Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: Montserrat-extrabold;
+    src: url("Montserrat-ExtraBold.woff2") format("woff2"),
+    url("Montserrat-ExtraBold.woff") format("woff");
 }
 
 * {
@@ -32,7 +45,7 @@
 
 .menu {
     flex: 1;
-    max-width: 1440px;
+    max-width: var(--max-weight);
 }
 
 .menu__list {
@@ -40,7 +53,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0.3rem auto;
+    margin: 0.3rem;
     padding: 0;
 }
 
@@ -66,19 +79,125 @@
     border: 2vh solid rgba(0, 0, 0, 0);
     width: 100vw;
     justify-content: center;
-
 }
 
 .aside {
     flex: 0.25;
-    max-width: 360px;
+    max-width: 270px;
     background-color: var(--background-color);
+    overflow: hidden;
+}
+
+.container-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-h1 {
+    position: fixed;
+    max-width: var(--max-weight);
+    white-space: nowrap;
+    margin: 10px 0 0 870px;
+}
+
+.h1 {
+    display: inline;
+    margin: 0;
+    font-family: Montserrat-extrabold;
+    font-size: 6em;
+}
+
+.line {
+    font-size: 6em;
+    background-color: var(--background-color);
+}
+
+.job-title {
+    font-size: 3em;
+}
+
+.photo {
+    flex-shrink: ;
+    margin: 14em auto 0;
+    border-radius: 50%;
+    max-width: 216px;
+}
+
+.h2 {
+    margin: 0;
+    margin-top: 2em;
+    font-family: Montserrat-extrabold;
+
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-element {
+    font-weight: bold;
+    padding: 0.5em;
 }
 
 .section {
     flex: 1;
-    max-width: 1080px;
+    max-width: 810px;
     background-color: white;
+    margin-top: 14em;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0em 0 0 7em;
+}
+
+.h3 {
+    font-weight: 400;
+}
+
+.p {
+    line-height: 1.5em;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    background: var(--background-color);
+    color: rgb(68, 68, 68);
+}
+
+.hljs-keyword {
+    font-weight: 700;
+}
+
+.hljs-title {
+    color: rgb(136, 0, 0);
+    font-weight: 700;
+}
+
+.hljs-number {
+    color: rgb(136, 0, 0);
+}
+
+.skill-list {
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.container-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
+}
+
+.skills-element {
+    flex: 1 0 226px;
+    white-space: nowrap;
+    margin-bottom: 0.5em;
 }
 
 .footer {
@@ -90,7 +209,7 @@
 .footer-container {
     display: flex;
     flex: 1;
-    max-width: 1440px;
+    max-width: var(--max-weight);
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;

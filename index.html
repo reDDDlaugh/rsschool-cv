@@ -13,7 +13,7 @@
 <body class="body">
     <header class="header">
             <nav class="menu">
-                <ul class="menu__list unorder-list">
+                <ul class="menu__list">
                     <li class="list__element">
                         <a class="link" href="#About">About me</a>
                     </li>
@@ -27,6 +27,9 @@
                         <a class="link" href="#Code">Code example</a>
                     </li>
                     <li class="list__element">
+                        <a class="link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="list__element">
                         <a class="link" href="#Language">Language</a>
                     </li>
                 </ul>
@@ -35,19 +38,127 @@
 
     <main class="main">
             <section class="aside">
-                <p>Contacts</p>
-                <p>Skills</p>
+                <div class="container-aside">
+                    <div class="container-h1">
+                        <div class="div-h1">
+                            <h1 class="h1">ILYA PROKUDIN&nbsp;</h1>
+                            <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </span>
+                        </div>
+                        <span class="job-title">Junior Software Engineer</span>
+                    </div>
+                    <div class="container-image">
+                        <img class="photo" src="Photo-html.png" alt="Ilya Prokudin" title="Ilya Prokudin">
+                    </div>
+                    <h2 class="h2">CONTACTS</h2>
+                    <div class="container-contacts">
+                        <ul class="contact-list">
+                            <li class="contact-element">
+                                <a class="link contact" href="https://goo.gl/maps/yMAzsa4oxv9oNgPk6" target="_blank">Nizhny Novgorod, Russia</a>
+                            </li>
+                            <li class="contact-element">
+                                <a class="link contact" href="mailto:redddlaugh@gmail.com" target="_blank">redddlaugh@gmail.com</a>
+                            </li>
+                            <li class="contact-element">
+                                <a class="link contact" href="https://github.com/reDDDlaugh" target="_blank">GitHub</a>
+                            </li>
+                            <li class="contact-element">
+                                <a class="link contact" href="https://discordapp.com/users/778653417374613524/" target="_blank">Discord</a>
+                            </li>
+                            <li class="contact-element">
+                                <a class="link contact" href="https://t.me/redddlaugh" target="_blank">Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section class="section">
-                <p>About me</p>
-                <p>Code example</p>
+                <div class="container-section">
+                    <div class="article">
+                        <h2 class="h2" id="About">ABOUT ME</h2>
+                        <p class="p">
+                            For 10 years I’ve been working in mobile retail, another 10 years in the field of entertainment: Internet cafe, casino, cinema (at different times). At the moment, my goal is to gain experience in the front-end development and create a portfolio necessary to obtain the position of a junior software engineer. My strong and at the same time weak side is the desire to do everything independently, without someone else's help.
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h2 class="h2" id="Education">EDUCATION</h2>
+                        <h3 class="h3">2017 &mdash; 2021</h3>
+                        <p class="p">
+                            All-Russian State University of Cinematography named after S. A. Gerasimov (a.k.a. VGIK) - screenwriter.
+                        </p>
+                        <h3 class="h3">2023 &mdash; now</h3>
+                        <p class="p">
+                            RS School course «JavaScript/Front-end» - Junior Software Engineer.
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h2 class="h2" id="Projects">PROJECTS</h2>
+                        <p class="p">
+                            <a class="link" href="https://redddlaugh.github.io/rsschool-cv/" target="_blank">CV</a>
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h2 class="h2" id="Code">CODE EXAMPLE</h2>
+                        <h3 class="h3">Moving Zeros To The End</h3>
+                        <p class="p">
+                            <pre class="hljs">
+                                <span class="hljs-function">
+    <span class="hljs-keyword">function</span> <span class="hljs-title">moveZeros</span> (<span class="hljs-params">arr</span>)</span> {
+        <span class="hljs-keyword">return</span> arr.sort((a, b) =&gt; b === <span class="hljs-number">0</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>);
+    }
+                            </pre>
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h2 class="h2" id="Skills">SKILLS</h2>
+                        <p class="p">
+                            <ul class="skill-list">
+                                <div class="container-skills">
+                                <li class="skills-element">
+                                    HTML5
+                                </li>
+                                <li class="skills-element">
+                                    CSS3
+                                </li>
+                                <li class="skills-element">
+                                    JavaScript (ES6+)
+                                </li>
+                                <li class="skills-element">
+                                    VS Code
+                                </li>
+                                <li class="skills-element">
+                                    Git
+                                </li>
+                                <li class="skills-element">
+                                    GitHub
+                                </li>
+                                </div>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h2 class="h2" id="Language">LANGUAGE</h2>
+                        <p class="p">
+                            English &mdash; A2 (pre-intermediate)
+                        </p>
+                    </div>
+                </div>
             </section>
     </main>
 
     <footer class="footer">
         <div class="footer-container">
-            <a class="link" href="https://github.com/reDDDlaugh/" target="_blank">reDDDlaugh</a>
-            <span>&COPY;2023</span>
+            <a class="link" href="https://github.com/reDDDlaugh/" target="_blank">GitHub</a>
+            <span class="span">&COPY;2023</span>
             <a class="img-link" href="https://rs.school/js/" target="_blank">
                 <img class="ico" src="rs_school_js.ico" alt="RS School" title="«JavaScript/Front-end»">
             </a>
