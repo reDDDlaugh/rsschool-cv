@@ -1,11 +1,228 @@
-@charset "utf-8";
+:root {
+    --background-color: #EAEAEA;
+    --max-weight: 1080px;
+}
 
-/*=====================================================
+@font-face {
+    font-family: Montserrat;
+    src: url("Montserrat-Regular.woff2") format("woff2"),
+    url("Montserrat-Regular.woff") format("woff");
+}
 
-* CV
+@font-face {
+    font-family: Montserrat-bold;
+    src: url("Montserrat-Bold.woff2") format("woff2"),
+    url("Montserrat-Bold.woff") format("woff");
+}
 
-    Author: Ilya Prokudin
-    Copyright (c) 2023
+@font-face {
+    font-family: Montserrat-extrabold;
+    src: url("Montserrat-ExtraBold.woff2") format("woff2"),
+    url("Montserrat-ExtraBold.woff") format("woff");
+}
 
-=====================================================*/
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+  
+.html {
+    scroll-behavior: smooth;
+}
 
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.menu {
+    flex: 1;
+    max-width: var(--max-weight);
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0.3rem;
+    padding: 0;
+}
+
+.list__element {
+    display: inline;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.link:hover {
+    text-shadow: black 1px 1px 3px;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    border: 20px solid rgba(0, 0, 0, 0);
+    width: 100vw;
+    justify-content: center;
+}
+
+.aside {
+    flex: 0.25;
+    max-width: 270px;
+    min-width: 260px;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+.container-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-h1 {
+    position: fixed;
+    max-width: var(--max-weight);
+    white-space: nowrap;
+    margin-left: 30px;
+}
+
+.h1 {
+    display: inline;
+    margin: 0;
+    font-family: Montserrat-extrabold;
+    font-size: 6em;
+}
+
+.line {
+    display: inline;
+    padding: 0 50em;
+    font-size: 6em;
+    background-color: var(--background-color);
+}
+
+.job-title {
+    font-size: 3em;
+}
+
+.photo {
+    margin: 14em 0 1em;
+    border-radius: 50%;
+    max-width: 216px;
+}
+
+.h2 {
+    margin: 0;
+    margin-top: 0.5em;
+    font-family: Montserrat-extrabold;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-element {
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.section {
+    flex: 1;
+    max-width: 810px;
+    background-color: white;
+    margin-top: 13em;
+    overflow-y: auto;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em 0 2em;
+}
+
+.h3 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.p {
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    background: var(--background-color);
+    color: rgb(68, 68, 68);
+    width: fit-content;
+}
+
+.hljs-keyword {
+    font-weight: 700;
+}
+
+.hljs-title {
+    color: rgb(136, 0, 0);
+    font-weight: 700;
+}
+
+.hljs-number {
+    color: rgb(136, 0, 0);
+}
+
+.skill-list {
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
+}
+
+.skills-element {
+    flex: 1 0 226px;
+    white-space: nowrap;
+    margin-bottom: 0.5em;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.footer-container {
+    display: flex;
+    flex: 1;
+    max-width: var(--max-weight);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3vw 0;
+}
+
+.img-link {
+    line-height: 0;
+}
