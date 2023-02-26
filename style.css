@@ -10,6 +10,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: Montserrat;
 }
   
 .html {
@@ -19,43 +20,71 @@
 .body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-family: Montserrat;
+    height: 100vh;
+    margin: 0;
 }
 
 .header {
-    position: fixed;
+    display: flex;
+    justify-content: center;
     background-color: var(--background-color);
-    left: 0;
-    right: 0;
-    top: 0;
 }
 
-.container {
-    display: flex;
-    max-width: 1440px;
-    margin: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.menu {
+    flex: 0 0 60vw;
 }
 
 .menu__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
+    margin: 0.3rem auto;
+    padding: 0;
 }
 
 .list__element {
-    display: inline-block;
+    display: inline;
 }
 
 .menu__item {
-    padding: 0px 10px;
-    margin: 0px 40px;
     color: black;
     text-decoration: none;
+    white-space: nowrap;
     transition: 0.5s;
 }
 
 .menu__item:hover {
     text-shadow: black 1px 1px 3px;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    justify-content: center;
+    border: 2vh solid rgba(0, 0, 0, 0);
+}
+
+.aside {
+    flex: 0 0 15vw;
+    background-color: var(--background-color);
+}
+
+.section {
+    flex: 0 0 45vw;
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.footer-container {
+    display: flex;
+    flex: 0 0 60vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
