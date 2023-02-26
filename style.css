@@ -35,6 +35,7 @@
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .header {
@@ -76,7 +77,7 @@
     display: flex;
     flex: 1;
     overflow: auto;
-    border: 2vh solid rgba(0, 0, 0, 0);
+    border: 20px solid rgba(0, 0, 0, 0);
     width: 100vw;
     justify-content: center;
 }
@@ -84,6 +85,7 @@
 .aside {
     flex: 0.25;
     max-width: 270px;
+    min-width: 260px;
     background-color: var(--background-color);
     overflow: hidden;
 }
@@ -93,13 +95,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .container-h1 {
     position: fixed;
     max-width: var(--max-weight);
     white-space: nowrap;
-    margin: 10px 0 0 870px;
+    margin-left: 30px;
 }
 
 .h1 {
@@ -110,6 +113,8 @@
 }
 
 .line {
+    display: inline;
+    padding: 0 50em;
     font-size: 6em;
     background-color: var(--background-color);
 }
@@ -119,17 +124,15 @@
 }
 
 .photo {
-    flex-shrink: ;
-    margin: 14em auto 0;
+    margin: 14em 0 1em;
     border-radius: 50%;
     max-width: 216px;
 }
 
 .h2 {
     margin: 0;
-    margin-top: 2em;
+    margin-top: 0.5em;
     font-family: Montserrat-extrabold;
-
 }
 
 .contact-list {
@@ -146,21 +149,24 @@
     flex: 1;
     max-width: 810px;
     background-color: white;
-    margin-top: 14em;
+    margin-top: 13em;
+    overflow-y: auto;
 }
 
 .container-section {
     display: flex;
     flex-direction: column;
-    margin: 0em 0 0 7em;
+    margin: 0 2em 0 2em;
 }
 
 .h3 {
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .p {
     line-height: 1.5em;
+    margin-top: 1em;
 }
 
 .hljs {
@@ -168,6 +174,7 @@
     overflow-x: auto;
     background: var(--background-color);
     color: rgb(68, 68, 68);
+    width: fit-content;
 }
 
 .hljs-keyword {
@@ -188,7 +195,7 @@
     font-size: 1.2em;
 }
 
-.container-skills {
+.skill-list {
     display: flex;
     flex-wrap: wrap;
     align-content:space-around;
