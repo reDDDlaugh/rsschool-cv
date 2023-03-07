@@ -25,7 +25,7 @@
     box-sizing: border-box;
     font-family: Montserrat;
 }
-  
+
 .html {
     scroll-behavior: smooth;
 }
@@ -151,6 +151,7 @@
     background-color: white;
     margin-top: 13em;
     overflow-y: auto;
+    /*-webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
 }
 
 .container-section {
